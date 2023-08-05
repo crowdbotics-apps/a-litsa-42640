@@ -1,6 +1,6 @@
 import axios from "axios"
 const alitsaAPI = axios.create({
-  baseURL: "https://a-litsa-42640.botics.co",
+  baseURL: "https://maracas-42640.botics.co",
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
 function api_docs_schema_retrieve(payload) {

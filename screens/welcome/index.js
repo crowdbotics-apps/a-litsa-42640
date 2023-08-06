@@ -6,7 +6,7 @@ const WelcomeScreen = () => {
       <ScrollView contentContainerStyle={styles.scrollView}>
         <View style={styles.group} />
         <View style={styles.group}>
-          <Image style={styles.logo} source={require("./logo.png")} />
+          <Image style={styles.logo} source={require("./1516292441452.jpeg")} />
           <Text style={styles.text}>{"Contact A. Litsa"}</Text>
         </View>
         <Text style={styles.footer}>Made with ❤️ by Crowdbotics</Text>

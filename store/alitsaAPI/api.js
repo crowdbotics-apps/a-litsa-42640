@@ -7,13 +7,13 @@ function api_docs_schema_retrieve(payload) {
   return alitsaAPI.get(`/api-docs/schema/`, { params: { lang: payload.lang } })
 }
 function api_v1_login_create(payload) {
-  return alitsaAPI.post(`/api/v1/login/`, payload.data)
+  return alitsaAPI.post(`/api/v1/login/`, payload)
 }
 function api_v1_signup_create(payload) {
-  return alitsaAPI.post(`/api/v1/signup/`, payload.data)
+  return alitsaAPI.post(`/api/v1/signup/`, payload)
 }
 function rest_auth_login_create(payload) {
-  return alitsaAPI.post(`/rest-auth/login/`, payload.data)
+  return alitsaAPI.post(`/rest-auth/login/`, payload)
 }
 function rest_auth_logout_retrieve(payload) {
   return alitsaAPI.get(`/rest-auth/logout/`)
@@ -22,28 +22,28 @@ function rest_auth_logout_create(payload) {
   return alitsaAPI.post(`/rest-auth/logout/`)
 }
 function rest_auth_password_change_create(payload) {
-  return alitsaAPI.post(`/rest-auth/password/change/`, payload.data)
+  return alitsaAPI.post(`/rest-auth/password/change/`, payload)
 }
 function rest_auth_password_reset_create(payload) {
-  return alitsaAPI.post(`/rest-auth/password/reset/`, payload.data)
+  return alitsaAPI.post(`/rest-auth/password/reset/`, payload)
 }
 function rest_auth_password_reset_confirm_create(payload) {
-  return alitsaAPI.post(`/rest-auth/password/reset/confirm/`, payload.data)
+  return alitsaAPI.post(`/rest-auth/password/reset/confirm/`, payload)
 }
 function rest_auth_registration_create(payload) {
-  return alitsaAPI.post(`/rest-auth/registration/`, payload.data)
+  return alitsaAPI.post(`/rest-auth/registration/`, payload)
 }
 function rest_auth_registration_verify_email_create(payload) {
-  return alitsaAPI.post(`/rest-auth/registration/verify-email/`, payload.data)
+  return alitsaAPI.post(`/rest-auth/registration/verify-email/`, payload)
 }
 function rest_auth_user_retrieve(payload) {
   return alitsaAPI.get(`/rest-auth/user/`)
 }
 function rest_auth_user_update(payload) {
-  return alitsaAPI.put(`/rest-auth/user/`, payload.data)
+  return alitsaAPI.put(`/rest-auth/user/`, payload)
 }
 function rest_auth_user_partial_update(payload) {
-  return alitsaAPI.patch(`/rest-auth/user/`, payload.data)
+  return alitsaAPI.patch(`/rest-auth/user/`, payload)
 }
 export const apiService = {
   api_docs_schema_retrieve,
